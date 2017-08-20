@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Companion</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>
+</head>
+<body>
+<div id="top-menu">
+    <a href="index.php">
+        <img class="logo" src="images/logo.png" alt="logo">
+    </a>
+    <div class="flex-space"></div>
+</div>
+<!-- Below the header code -->
+<div id="registerpage">
+    <header>
+        <h1>Register</h1>
+    </header>
+    <form id="registerform" action="register.php" method="post">
+        <div class="input-pair">
+            <label for="firstname">Username </label>
+            <input type="text" name="name" id="firstname" required>
+        </div>
+        <div class="input-pair">
+            <label for="surname">Email name </label>
+            <input type="email" name="email" id="surname" required>
+        </div>
+            <div class="input-pair">
+            <label for="email">Password </label>
+            <input type="password" name="password" id="email" required >
+        </div>
+            <div class="input-pair">
+            <label for="username">Name </label>
+            <input type="text" name="fname" id="username" required >
+        </div>
+        <div class="input-pair">
+            <label for="password">surname </label>
+            <input type="password" name="lname" id="password" required >
+        </div>
+        <button type="submit" id="button-submit">Register</button>
+    </form>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+#profilepic-bar {
+  background-color: #383838;
+  left: 90px;
+  right: 0;
+  padding-top: 0.1em;
+  padding-bottom: 1em;
+  top: 0;
+  left: 80px;
+  margin-top: 56px;
+  margin-left: 80px; }
+  #profilepic-bar img {
+    height: 200px;
+    margin-left: 42%; }
+
+#left-sectioninfo {
+  margin-left: 80px; }
+  #left-sectioninfo h1 {
+    padding: 1.5em; }
+  #left-sectioninfo #line {
+    width: 15%;
+    border: solid red;
+    margin-left: 200px;
+    float: left; }
+  #left-sectioninfo #editform {
+    padding-left: 5em;
+    padding-top: 1em; }
+    #left-sectioninfo #editform label {
+      padding: 1em;
+      font-size: 1.5em; }
+    #left-sectioninfo #editform #right-label {
+      margin-top: -375px;
+      margin-left: 600px; }
+
+@media only screen and (max-width: 800px) {
+  #profilepic-bar {
+    background-color: #383838;
+    left: 90px;
+    right: 0;
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+    top: 0;
+    margin-top: 56px;
+    margin-left: 0px; }
+    #profilepic-bar img {
+      height: 150px;
+      margin-left: 35%;
+      background-position: center;
+      background-size: cover; }
+
+  #left-sectioninfo {
+    margin-left: 30px; }
+    #left-sectioninfo h1 {
+      padding: 0em;
+      font-size: 2em;
+      margin-top: 20px;
+      margin-left: 40px; }
+    #left-sectioninfo #line {
+      display: none; }
+    #left-sectioninfo #editform {
+      padding-left: 2em;
+      padding-top: 1em; }
+      #left-sectioninfo #editform label {
+        padding: 1em;
+        font-size: 1.1em; }
+      #left-sectioninfo #editform #right-label {
+        margin-top: -375px;
+        margin-left: 600px; } }

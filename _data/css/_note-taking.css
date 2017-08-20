@@ -1,0 +1,152 @@
+#notes-takingpage {
+  margin-left: 80px;
+  overflow: hidden;
+  border: solid red; }
+  #notes-takingpage .site-control {
+    display: none; }
+  #notes-takingpage #toggle-app-sidebar:checked ~ #app-sidebar {
+    left: 0; }
+  #notes-takingpage #app-content {
+    padding: 3.5em 0.75em 0.75em; }
+  #notes-takingpage #app-header .fa {
+    margin-top: 80px; }
+  #notes-takingpage #app-sidebar {
+    background-color: #202020;
+    bottom: 0;
+    color: #fff;
+    left: -100%;
+    margin-top: 56px;
+    margin-left: 5%;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    z-index: 1001;
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out; }
+  #notes-takingpage #app-sidebar .fa {
+    font-size: 1.5em;
+    float: right;
+    padding: 1em; }
+  #notes-takingpage #app-sidebar #app-options li {
+    border-top: 1px solid rgba(255, 255, 255, 0.25); }
+  #notes-takingpage #app-sidebar #app-options a {
+    color: #fff;
+    padding: 0.75em;
+    text-decoration: none; }
+  #notes-takingpage #app-sidebar #app-options a:active {
+    background-color: rgba(255, 255, 255, 0.15); }
+  #notes-takingpage #app-sidebar #app-options a i {
+    margin: 0.1em 0.25em 0 0;
+    text-align: center;
+    width: 1.75em; }
+  #notes-takingpage #notes-bottomcontainer {
+    margin-left: 150px; }
+    #notes-takingpage #notes-bottomcontainer #titleoptions {
+      display: flex;
+      margin-left: 80px; }
+      #notes-takingpage #notes-bottomcontainer #titleoptions label {
+        padding-right: 10px; }
+      #notes-takingpage #notes-bottomcontainer #titleoptions #input-title {
+        width: 30%; }
+    #notes-takingpage #notes-bottomcontainer textarea {
+      margin-top: 50px;
+      resize: none; }
+    #notes-takingpage #notes-bottomcontainer #buttons {
+      display: flex;
+      margin-right: 150px;
+      float: right;
+      margin-top: 15px;
+      height: 30px; }
+      #notes-takingpage #notes-bottomcontainer #buttons .buttonsave {
+        color: white;
+        background-color: black;
+        border: 0;
+        opacity: 0.7;
+        width: 100px; }
+        #notes-takingpage #notes-bottomcontainer #buttons .buttonsave:hover {
+          opacity: 1; }
+
+@media only screen and (max-width: 800px) {
+  #notes-takingpage {
+    margin-left: 80px;
+    overflow: hidden;
+    margin-top: 60px !important; }
+
+  .site-control {
+    display: none; }
+
+  #toggle-app-sidebar:checked ~ #app-sidebar {
+    left: 0; }
+
+  #app-content {
+    padding: 3.5em 0.75em 0.75em; }
+
+  #app-header .fa {
+    margin-top: 0px !important; }
+
+  #app-sidebar {
+    background-color: #202020;
+    bottom: 0;
+    color: #fff;
+    left: -100%;
+    margin-top: 56px;
+    margin-left: 13% !important;
+    position: fixed;
+    top: 0;
+    width: 25% !important;
+    z-index: 1001;
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out; }
+
+  #app-sidebar .fa {
+    font-size: 1.5em;
+    float: right;
+    padding: 1em; }
+
+  #app-sidebar #app-options li {
+    border-top: 1px solid rgba(255, 255, 255, 0.25); }
+
+  #app-sidebar #app-options a {
+    color: #fff;
+    padding: 0.75em;
+    text-decoration: none; }
+
+  #app-sidebar #app-options a:active {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+  #app-sidebar #app-options a i {
+    margin: 0.1em 0.25em 0 0;
+    text-align: center;
+    width: 1.75em; }
+
+  #notes-bottomcontainer {
+    margin-left: 0px !important; }
+    #notes-bottomcontainer #titleoptions {
+      margin-left: 20px !important; }
+      #notes-bottomcontainer #titleoptions label {
+        padding-right: 10px; }
+      #notes-bottomcontainer #titleoptions #input-title {
+        width: 50% !important; }
+    #notes-bottomcontainer textarea {
+      margin-top: 20px !important;
+      resize: none;
+      margin-left: 30px;
+      width: 80%; }
+    #notes-bottomcontainer #buttons {
+      display: flex;
+      margin-right: 17% !important;
+      float: right;
+      margin-top: 15px;
+      height: 30px; }
+      #notes-bottomcontainer #buttons .buttonsave {
+        color: white;
+        background-color: black;
+        border: 0;
+        opacity: 0.7;
+        width: 100px; }
+        #notes-bottomcontainer #buttons .buttonsave:hover {
+          opacity: 1; } }

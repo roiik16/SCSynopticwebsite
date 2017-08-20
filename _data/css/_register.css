@@ -1,0 +1,29 @@
+#registerpage {
+  margin-top: 100px;
+  background-color: grey;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 0.5em; }
+  #registerpage header h1 {
+    text-align: center;
+    margin-left: -300px;
+    padding-top: 20px; }
+  #registerpage #registerform {
+    margin: 0 auto;
+    width: 50%; }
+    #registerpage #registerform .input-pair {
+      display: flex;
+      padding: 0.5em;
+      margin-left: 75px; }
+      #registerpage #registerform .input-pair label {
+        width: 5em; }
+      #registerpage #registerform .input-pair input {
+        margin: 0;
+        flex: 1;
+        border-radius: 5px;
+        outline: none; }
+    #registerpage #registerform #button-submit {
+      border: 0;
+      margin-left: 450px; }
+      #registerpage #registerform #button-submit:hover {
+        box-shadow: 1px 1px 1px black; }

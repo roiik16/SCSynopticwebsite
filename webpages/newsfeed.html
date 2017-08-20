@@ -1,0 +1,76 @@
+<div id="allbody">
+  <div id="askaquestionarea">
+      <p>Ask a question</p>
+          <form id="questionform" action="newsfeed.php" method="get">
+              <input type="Name" placeholder = "Write your question here" id="input-question" class="flex-space">
+
+              <button type="submit" id="button-post">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+          </form>
+      <hr id="question-line">
+  </div>
+<!-- END OF ASK QUESTION -->
+
+<!-- comments start from below -->
+<!-- SORT BY -->
+<div id="sortbyandpinnedline">
+    <div id="dropdown-icon">
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+    <div tabindex="0" class="onclick-menu">
+        <ul class="onclick-menu-content">
+            <li><button onclick="#">Date</button></li>
+            <li><button onclick="">Name</button></li>
+        </ul>
+    </div>
+    </div>
+       <!-- Pinned posts -->
+      <div id="pinned-posts">
+          <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+              <span>Pinned Posts</span>
+      </div>
+</div>
+        <div id="comments-page">
+            <div id="commentsarea">
+                <!-- COMMENT 1 -->
+                <div class="post">
+                    <a href="index.php">
+                        <img class="user-image" src="images/user-image.png" alt="logo">
+                    </a>
+                    <div id="user-comment1">
+                        <span id="username">Ludwig Buttigieg </span>
+                        <span id="timeago">20 minutes ago</span>
+                        <span id="usercomment">Today's lecture has been cancelled. Sorry and meet you next time!</span>
+                        <i class="fa fa-heart-o likesystem" aria-hidden="true">
+                        3 people likes this
+                        </i>
+                        <form id="postmessage" action="newsfeed.php" method="get">
+                            <input id="input-question" type="Name" placeholder = "Write a comment">
+                            <input type="hidden" name="post_id" value="">
+
+                            <button type="submit">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Screen splitter -->
+            <div id="verticalline"></div>
+    <!-- right sidebar -->
+            <div id="pinnedcommentsuserimage">
+                <div class="post">
+                    <a href="index.php">
+                        <img class="user-image" src="images/user-image.png" alt="logo">
+                    </a>
+                </div>
+                <div id="pinnedcomments">
+                    <span id="username">Ludwig Buttigieg</span>
+                    <span id="timeago">20 minutes ago</span>
+                    <span id="usercomment">Today's lecture has been cancelled. Sorry and meet you next time!</span>
+                </div>
+
+            </div>
+        </div>
+    </div>

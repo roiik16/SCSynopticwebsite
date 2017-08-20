@@ -1,0 +1,61 @@
+#sidebar {
+  background: #383838;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 50px;
+  width: 80px;
+  z-index: 1000; }
+  #sidebar nav ul li {
+    padding-top: 50%;
+    list-style: none; }
+    #sidebar nav ul li a {
+      opacity: 0.3; }
+      #sidebar nav ul li a.active {
+        opacity: 1; }
+      #sidebar nav ul li a:hover {
+        opacity: 1; }
+    #sidebar nav ul li i {
+      margin-top: 50px; }
+    #sidebar nav ul li #homeicon {
+      margin-left: -24px; }
+    #sidebar nav ul li #newspapericon {
+      margin-left: -28px; }
+    #sidebar nav ul li #newfile {
+      margin-left: -22px; }
+    #sidebar nav ul li #calendaricon {
+      margin-left: -24px; }
+    #sidebar nav ul li #envelopeicon {
+      margin-left: -25px; }
+
+@media only screen and (max-width: 800px) {
+  #sidebar {
+    background: #383838;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 50px;
+    width: 60px;
+    z-index: 1000;
+    font-size: 0.7em; }
+    #sidebar nav ul li {
+      padding-top: 50%;
+      list-style: none; }
+      #sidebar nav ul li a {
+        opacity: 0.3; }
+        #sidebar nav ul li a.active {
+          opacity: 1; }
+        #sidebar nav ul li a:hover {
+          opacity: 1; }
+      #sidebar nav ul li i {
+        margin-top: 50px; }
+      #sidebar nav ul li #homeicon {
+        margin-left: -27px; }
+      #sidebar nav ul li #newspapericon {
+        margin-left: -29px; }
+      #sidebar nav ul li #newfile {
+        margin-left: -24px; }
+      #sidebar nav ul li #calendaricon {
+        margin-left: -25px; }
+      #sidebar nav ul li #envelopeicon {
+        margin-left: -27px; } }

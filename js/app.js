@@ -1,0 +1,1 @@
+function GetURL(t){return"pages/"+t+".html"}var content="#app-content";$("#app-options a").click(function(){var t=$(this).attr("href");return $(content).load(GetURL(t)),$("#toggle-app-sidebar").prop("checked",!1),!1}),$(function(){$(content).load(GetURL("home"))});

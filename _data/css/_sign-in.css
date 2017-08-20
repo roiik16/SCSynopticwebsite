@@ -1,0 +1,155 @@
+#signinpage {
+  margin-top: 150px; }
+  #signinpage #sign-inmain {
+    margin-top: 50px;
+    display: flex;
+    height: 25em; }
+    #signinpage #sign-inmain #colorleft {
+      background-color: #96989b;
+      width: 30%;
+      margin-left: 20%; }
+      #signinpage #sign-inmain #colorleft h1 {
+        margin-top: 60px;
+        margin-left: 40px; }
+      #signinpage #sign-inmain #colorleft #signinform {
+        margin-top: 20px; }
+        #signinpage #sign-inmain #colorleft #signinform #emailadd {
+          width: 20em;
+          margin-left: 18%;
+          border: 2px solid #303133;
+          padding: 7px;
+          margin-top: 30px; }
+        #signinpage #sign-inmain #colorleft #signinform #password {
+          width: 20em;
+          margin-left: 18%;
+          border: 2px solid #4c4c4c;
+          margin-top: 30px;
+          padding: 7px; }
+        #signinpage #sign-inmain #colorleft #signinform #forgotcreate {
+          text-align: center; }
+          #signinpage #sign-inmain #colorleft #signinform #forgotcreate a {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: black;
+            padding-top: 15px;
+            display: inline-block;
+            text-align: center; }
+        #signinpage #sign-inmain #colorleft #signinform #sign-in {
+          color: white;
+          background-color: black;
+          width: 15em;
+          margin-top: 20px;
+          margin-left: 25%; }
+        #signinpage #sign-inmain #colorleft #signinform #signinwith {
+          display: none;
+          width: 75%; }
+          #signinpage #sign-inmain #colorleft #signinform #signinwith span {
+            margin-top: 20px;
+            margin-left: 80px; }
+          #signinpage #sign-inmain #colorleft #signinform #signinwith #facebooklogin4app {
+            width: 190px;
+            margin-left: 0px; }
+          #signinpage #sign-inmain #colorleft #signinform #signinwith #googlelogin4app {
+            width: 170px;
+            margin-left: 10px; }
+    #signinpage #sign-inmain #colorright {
+      background-color: #babec4;
+      width: 30%; }
+      #signinpage #sign-inmain #colorright span {
+        text-align: center;
+        margin-top: 100px; }
+      #signinpage #sign-inmain #colorright #facebooklogin {
+        width: 200px;
+        margin-left: 100px; }
+      #signinpage #sign-inmain #colorright #googlelogin {
+        width: 180px;
+        margin-left: 110px; }
+
+@media only screen and (max-width: 800px) {
+  #signinpage {
+    margin-top: 80px;
+    width: 100% !important; }
+
+  #sign-inmain {
+    margin-top: 0px !important; }
+    #sign-inmain #colorleft {
+      background-color: #fff !important;
+      margin-left: 18% !important;
+      width: 100% !important;
+      height: 70%; }
+      #sign-inmain #colorleft h1 {
+        display: none;
+        margin-top: 0px !important;
+        margin-left: 0px !important; }
+      #sign-inmain #colorleft .image4app {
+        background: url(../images/logo.png);
+        width: 70px;
+        height: 70px;
+        background-position: center;
+        background-size: cover;
+        margin-left: 60px; }
+      #sign-inmain #colorleft #signinform {
+        margin-top: 20px;
+        margin-left: 0% !important; }
+        #sign-inmain #colorleft #signinform #emailadd {
+          width: 15em !important;
+          margin-left: 0% !important;
+          border: none !important;
+          padding: 7px !important;
+          background-color: #808080;
+          opacity: 0.6;
+          -webkit-border-radius: 7px;
+          border-radius: 7px;
+          outline: none; }
+        #sign-inmain #colorleft #signinform #password {
+          width: 15em !important;
+          margin-left: 0% !important;
+          border: none !important;
+          padding: 7px !important;
+          margin-top: 20px !important;
+          background-color: #808080;
+          opacity: 0.6;
+          -webkit-border-radius: 7px;
+          border-radius: 7px;
+          outline: none; }
+        #sign-inmain #colorleft #signinform #forgotcreate {
+          text-align: center;
+          display: flex;
+          margin-left: 2% !important;
+          width: 12em; }
+          #sign-inmain #colorleft #signinform #forgotcreate a {
+            margin-top: -10px !important;
+            font-size: 0.7em !important; }
+        #sign-inmain #colorleft #signinform #sign-in {
+          color: white;
+          background-color: green !important;
+          width: 13em !important;
+          margin-top: 20px;
+          margin-left: 3% !important;
+          padding-top: 5px !important;
+          padding-bottom: 5px !important; }
+        #sign-inmain #colorleft #signinform #signinwith {
+          width: 75%;
+          display: inline !important; }
+          #sign-inmain #colorleft #signinform #signinwith span {
+            margin-top: 20px;
+            margin-left: 80px; }
+          #sign-inmain #colorleft #signinform #signinwith #facebooklogin4app {
+            width: 190px;
+            margin-left: 0px; }
+          #sign-inmain #colorleft #signinform #signinwith #googlelogin4app {
+            width: 170px;
+            margin-left: 10px; }
+    #sign-inmain #colorright {
+      background-color: #babec4;
+      width: 30%;
+      display: none; }
+      #sign-inmain #colorright span {
+        text-align: center;
+        margin-top: 100px; }
+      #sign-inmain #colorright #facebooklogin {
+        width: 200px;
+        margin-left: 100px; }
+      #sign-inmain #colorright #googlelogin {
+        width: 180px;
+        margin-left: 110px; } }

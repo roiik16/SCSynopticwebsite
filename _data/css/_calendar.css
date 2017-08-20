@@ -1,0 +1,32 @@
+.calendar {
+  border: 1px solid #000; }
+  .calendar .invisible {
+    display: none; }
+  .calendar header {
+    display: flex; }
+    .calendar header a {
+      line-height: 5em;
+      margin: 0 2em;
+      flex: 1; }
+      .calendar header a.next {
+        text-align: right; }
+    .calendar header h1 {
+      text-align: center; }
+  .calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; }
+    .calendar ul li {
+      float: left;
+      width: 14.28571%; }
+    .calendar ul.calendar-days li {
+      height: 5em;
+      overflow: hidden; }
+      .calendar ul.calendar-days li:nth-child(2n) {
+        background-color: #eee; }
+      .calendar ul.calendar-days li.disabled {
+        background-color: #ccc; }
+      .calendar ul.calendar-days li span {
+        float: right;
+        margin: 1em; }

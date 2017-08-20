@@ -1,0 +1,103 @@
+#top-menu {
+  background-color: #b3e0ff;
+  display: flex;
+  left: 0;
+  padding: 0.5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1001; }
+  #top-menu .logo {
+    height: 40px;
+    background-color: #b3e0ff; }
+  #top-menu #register {
+    display: flex;
+    padding-top: 0.5em;
+    padding-right: 3em;
+    text-decoration: none;
+    background-color: #b3e0ff;
+    color: black; }
+    #top-menu #register:hover {
+      text-decoration: underline; }
+    #top-menu #register i {
+      background-color: transparent; }
+    #top-menu #register p {
+      display: inline;
+      padding-left: 10px;
+      color: black;
+      background-color: transparent; }
+  #top-menu #profileimage {
+    display: flex;
+    text-decoration: none;
+    padding-right: 1em; }
+    #top-menu #profileimage:focus {
+      color: black; }
+    #top-menu #profileimage img {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      margin-right: 20px; }
+    #top-menu #profileimage span {
+      line-height: 40px;
+      padding-right: 30px; }
+  #top-menu #signout {
+    display: flex;
+    padding-right: 2em;
+    text-align: center;
+    text-decoration: none; }
+    #top-menu #signout .fa-sign-out {
+      padding: 11px;
+      text-align: center;
+      margin-right: 20px; }
+
+@media only screen and (max-width: 500px) {
+  #top-menu {
+    display: flex;
+    left: 0;
+    padding: 0.5em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001; }
+    #top-menu .logo {
+      height: 40px;
+      background-color: #b3e0ff; }
+    #top-menu #register {
+      display: flex;
+      padding-top: 0.5em;
+      padding-right: 3em;
+      text-decoration: none;
+      background-color: #b3e0ff;
+      color: black; }
+      #top-menu #register:hover {
+        text-decoration: underline; }
+      #top-menu #register i {
+        background-color: transparent; }
+      #top-menu #register p {
+        display: inline;
+        padding-left: 10px;
+        color: black;
+        background-color: transparent; }
+    #top-menu #profileimage {
+      display: flex;
+      text-decoration: none;
+      padding-right: 1em; }
+      #top-menu #profileimage:focus {
+        color: black; }
+      #top-menu #profileimage img {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-right: 20px; }
+      #top-menu #profileimage span {
+        line-height: 40px;
+        padding-right: 30px; }
+    #top-menu #signout {
+      display: flex;
+      padding-right: 2em;
+      text-align: center;
+      text-decoration: none; }
+      #top-menu #signout .fa-sign-out {
+        padding: 11px;
+        text-align: center;
+        margin-right: 20px; } }

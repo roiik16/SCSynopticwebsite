@@ -1,0 +1,127 @@
+#contact-page {
+  margin-top: 70px;
+  margin-left: 100px;
+  display: flex;
+  padding-top: 30px; }
+  #contact-page #border-bar {
+    border: 1px solid #383838;
+    padding-bottom: 80px;
+    width: 60%;
+    margin-left: 40px; }
+    #contact-page #border-bar #header-bar {
+      background-color: #383838;
+      padding: 20px; }
+    #contact-page #border-bar #sendto {
+      margin-left: 100px;
+      margin-top: 30px; }
+      #contact-page #border-bar #sendto p {
+        float: left;
+        padding-right: 10px; }
+      #contact-page #border-bar #sendto select {
+        float: left;
+        width: 10%; }
+    #contact-page #border-bar #contact-text-box textarea {
+      margin-top: 80px;
+      margin-left: 100px;
+      width: 70%;
+      padding-bottom: 20%;
+      resize: none; }
+    #contact-page #border-bar #sendmessage {
+      background-color: #383838;
+      color: white;
+      float: right;
+      border: 0;
+      margin-top: 20px;
+      margin-right: 130px;
+      padding: 5px;
+      opacity: 0.7;
+      width: 60px; }
+      #contact-page #border-bar #sendmessage:hover {
+        opacity: 1; }
+  #contact-page #right-side {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    width: 25%; }
+    #contact-page #right-side #top-bar {
+      background-color: #383838;
+      padding: 20px; }
+    #contact-page #right-side h1 {
+      margin-left: 20px;
+      margin-top: 10px; }
+    #contact-page #right-side #message {
+      border: 1px solid black;
+      margin: 20px;
+      padding: 5px; }
+    #contact-page #right-side .fa-trash {
+      float: right;
+      padding-right: 15px; }
+    #contact-page #right-side .fa-reply {
+      float: right;
+      margin-right: 45px; }
+
+@media only screen and (max-width: 800px) {
+  #contact-page {
+    margin-top: 70px;
+    margin-left: 60px;
+    display: flex;
+    padding-top: 30px; }
+
+  #border-bar {
+    border: 1px solid #383838;
+    padding-bottom: 80px;
+    width: 80% !important;
+    margin-left: 40px; }
+    #border-bar #header-bar {
+      background-color: #383838;
+      padding: 20px; }
+    #border-bar #sendto {
+      margin-left: 20px !important;
+      margin-top: 30px; }
+      #border-bar #sendto p {
+        float: left;
+        padding-right: 10px; }
+      #border-bar #sendto select {
+        float: left;
+        width: 30% !important; }
+    #border-bar #contact-text-box textarea {
+      margin-top: 80px;
+      margin-left: 20px !important;
+      width: 80% !important;
+      padding-bottom: 20%;
+      resize: none; }
+    #border-bar #sendmessage {
+      background-color: #383838;
+      color: white;
+      float: right;
+      border: 0;
+      margin-top: 20px;
+      margin-right: 15% !important;
+      padding: 5px;
+      opacity: 0.7;
+      width: 60px; }
+      #border-bar #sendmessage:hover {
+        opacity: 1; }
+
+  #right-side {
+    display: none;
+    margin-left: 5% !important;
+    margin-right: 5%;
+    border: 1px solid black;
+    width: 25%; }
+    #right-side #top-bar {
+      background-color: #383838;
+      padding: 20px; }
+    #right-side h1 {
+      margin-left: 20px;
+      margin-top: 10px; }
+    #right-side #message {
+      border: 1px solid black;
+      margin: 20px;
+      padding: 5px; }
+    #right-side .fa-trash {
+      float: right;
+      padding-right: 15px; }
+    #right-side .fa-reply {
+      float: right;
+      margin-right: 45px; } }

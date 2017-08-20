@@ -1,0 +1,265 @@
+#allbody {
+  margin-top: 5em;
+  margin-left: 80px;
+  margin-right: 10px; }
+  #allbody #askaquestionarea p {
+    font-size: 2em;
+    padding-left: 90px;
+    padding-top: 20px; }
+
+#questionform {
+  padding: 1em;
+  display: flex; }
+  #questionform #input-question {
+    margin-left: 100px;
+    background: transparent; }
+  #questionform #button-post {
+    background: transparent;
+    border: 0;
+    margin-right: 600px;
+    padding-left: 2em; }
+
+#question-line {
+  width: 60em;
+  margin-left: 5em; }
+
+#sortbyandpinnedline {
+  display: flex;
+  padding-top: 1em;
+  margin-left: 40em; }
+  #sortbyandpinnedline #pinned-posts {
+    display: flex;
+    margin-left: 100px; }
+    #sortbyandpinnedline #pinned-posts i {
+      padding-right: 10px; }
+
+#comments-page {
+  display: flex; }
+  #comments-page #commentsarea {
+    width: 50%; }
+
+.post {
+  display: flex; }
+  .post .user-image {
+    height: 60px;
+    margin-left: 1em;
+    margin-top: 1em; }
+  .post #user-comment1 #username {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 25%; }
+  .post #user-comment1 #timeago {
+    font-size: 10px;
+    text-align: left;
+    width: 150px;
+    padding-left: 10px; }
+  .post #user-comment1 #usercomment {
+    font-size: 12px;
+    border-style: groove;
+    width: 75%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px; }
+  .post #user-comment1 .likesystem {
+    padding-left: 20px;
+    margin-top: 10px;
+    float: left; }
+  .post #user-comment1 #postmessage {
+    margin-left: 200px;
+    margin-top: 10px; }
+    .post #user-comment1 #postmessage #input-question {
+      width: 300px;
+      float: left;
+      padding: 5px; }
+    .post #user-comment1 #postmessage button {
+      background: transparent;
+      border: 0;
+      padding: 5px; }
+
+#verticalline {
+  border-right: solid #808080;
+  height: 20em; }
+
+.onclick-menu {
+  position: relative;
+  display: inline-block; }
+
+.onclick-menu:before {
+  content: "Sort by"; }
+
+.onclick-menu:focus {
+  /* clicking on label should toggle the menu */
+  pointer-events: none;
+  outline: 0; }
+
+.onclick-menu:focus .onclick-menu-content {
+  /*  opacity is 1 in opened state (see below) */
+  opacity: 1;
+  visibility: visible;
+  /* don't let pointer-events affect descendant elements */
+  pointer-events: auto; }
+
+.onclick-menu-content {
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  text-decoration: none;
+  /* use opacity to fake immediate toggle */
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s; }
+  .onclick-menu-content button {
+    background: transparent;
+    border: 0;
+    margin-left: -40px; }
+
+#pinnedcommentsuserimage {
+  margin-left: 60px; }
+
+#pinnedcomments #username {
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 200px; }
+#pinnedcomments #timeago {
+  font-size: 10px;
+  text-align: left;
+  width: 150px;
+  padding-left: 10px; }
+#pinnedcomments #usercomment {
+  font-size: 12px;
+  border-style: groove #username;
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 200px; }
+#pinnedcomments #timeago {
+  font-size: 10px;
+  text-align: left;
+  width: 150px;
+  padding-left: 10px; }
+#pinnedcomments #usercomment {
+  font-size: 12px;
+  border-style: groove;
+  width: 400px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+@media only screen and (max-width: 800px) {
+  #allbody {
+    margin-right: 10px; }
+    #allbody #askaquestionarea p {
+      font-size: 1.5em;
+      padding-top: 20px;
+      margin-left: -80px; }
+
+  #questionform {
+    padding: 1em;
+    display: flex; }
+    #questionform #input-question {
+      background: transparent;
+      margin-left: 30px; }
+    #questionform #button-post {
+      background: transparent;
+      border: 0;
+      margin-right: 600px;
+      padding-left: 2em; }
+
+  #question-line {
+    width: 18em;
+    margin-left: 10px;
+    border: 1px solid black; }
+
+  #sortbyandpinnedline {
+    display: flex;
+    padding-top: 1em;
+    margin-left: 6em; }
+    #sortbyandpinnedline #dropdown-icon {
+      display: none; }
+    #sortbyandpinnedline #pinned-posts {
+      display: flex; }
+
+  .user-image {
+    height: 40px;
+    margin-left: 0em;
+    margin-top: 1em; }
+
+  #user-comment1 #username {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 200px; }
+  #user-comment1 #timeago {
+    font-size: 10px;
+    text-align: left;
+    width: 150px;
+    padding-left: 10px; }
+  #user-comment1 #usercomment {
+    font-size: 12px;
+    border-style: groove;
+    width: 20em;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px; }
+  #user-comment1 .likesystem {
+    padding-left: 20px;
+    margin-top: 10px;
+    float: left;
+    font-size: 0.8em; }
+  #user-comment1 #postmessage {
+    margin-left: 30px;
+    margin-top: 30px; }
+    #user-comment1 #postmessage #input-question {
+      width: 200px !important;
+      float: left;
+      padding: 5px;
+      margin-left: -250px; }
+    #user-comment1 #postmessage button {
+      background: transparent;
+      border: 0;
+      padding: 5px; }
+    #user-comment1 #postmessage #pinnedcommentsFuserimage {
+      display: none; }
+
+  #verticalline {
+    display: none; }
+
+  .onclick-menu {
+    position: relative;
+    display: inline-block; }
+
+  .onclick-menu:before {
+    content: "Sort by"; }
+
+  .onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+    outline: 0; }
+
+  .onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto; }
+
+  .onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    text-decoration: none;
+    /* use opacity to fake immediate toggle */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s; }
+    .onclick-menu-content button {
+      background: transparent;
+      border: 0;
+      margin-left: -40px; }
+
+  #pinnedcommentsuserimage {
+    display: none; }
+
+  #pinnedcomments {
+    display: none; } }

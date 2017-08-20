@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Companion</title>
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+        <link rel="icon" href="images/logo.png">
+        <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>
+</head>
+<body>
+    <div id="top-menu">
+        <a href="index.php"> <img class="logo" src="images/logo.png" alt="logo"> </a>
+        <div class="flex-space"></div>
+    </div>
+    <div id="signinpage">
+        <div id="sign-inmain">
+            <div id="logoimageapp"></div>
+            <div id="colorleft">
+                <div class="image4app"></div>
+                <h1>Sign in</h1>
+                <form id="signinform" action="login.php" method="post">
+
+                    <input type="text" name="username" id="emailadd" placeholder="Username or E-mail" required>
+
+                    <input type="Password" name="password" id="password" placeholder="Password" required>
+
+        <?php if ($_SERVER['REQUEST_METHOD'] === "POST" and $login === FALSE): ?>
+                            <span id="testtext">*Wrong username or password! </span>
+        <?php endif;?>
+                    <div id="forgotcreate">
+                        <a href="google.co.uk">Forgot password /</a>
+                        <a href="register.php">Create new account</a>
+                    </div>
+                    <button type="submit" id="sign-in">Sign-in</button>
+                    <div id="signinwith">
+                        <span>OR</span>
+                        <img id="facebooklogin4app" src="images/facebooklogin.png" href="facebook.com">
+                       <img id="googlelogin4app" src="images/google-sign-in.png" href="facebook.com">
+                    </div>
+                </form>
+            </div>
+            <div id="colorright">
+                <span>OR</span>
+                <img id="facebooklogin" src="images/facebooklogin.png" href="facebook.com">
+                <img id="googlelogin" src="images/google-sign-in.png" href="facebook.com">
+            </div>
+        </div>
+    </div>
+</body>
