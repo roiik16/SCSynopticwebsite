@@ -11,18 +11,29 @@ class Profile extends SC_Controller {
 					'type'			=> 'text',
 					'name'			=> 'input-full-name',
 					'placeholder'	=> 'Name',
-					'required'		=> FALSE
 				),
+
+				'username' 		=> array(
+					'type'		=> 'text',
+					'name' 		=> 'input-username',
+					'placeholder'	=> 'Username',
+				),
+
+				'name'			=> array (
+					'type'			=> 'name',
+					'name'			=> 'input-name',
+					'placeholder'	=> 'Name',
+				),
+
 				'email'			=> array (
 					'type'			=> 'email',
 					'name'			=> 'input-email',
-					'placeholder'	=> 'me@example.com'
+					'placeholder'	=> 'me@example.com',
 				),
 				'surname'			=> array (
 					'type'			=> 'text',
 					'name'			=> 'input-surname',
-					'placeholder'	=> 'surname'
-
+					'placeholder'	=> 'Surname',
 				)
 			)
 		);
@@ -36,7 +47,7 @@ class Profile extends SC_Controller {
 
 		$id = $this->session->userdata('user_id');
 
-		$name = $this->input->post ('user_name');
+		$name = $this->input->post ('input-name');
 		if ($name == '') $name = NULL;
 
 		$surname = $this->input->post ('input-surname');
@@ -45,7 +56,14 @@ class Profile extends SC_Controller {
 		$email = $this->input->post ('input-email');
 		if ($name == '') $name = NULL;
 
-		$this->users_model->update_users($id, $name, $surname, $email, $phone);
+		$username = $this->input->post ('input-username');
+		if ($username == '') $username = NULL;
+
+
+
+
+		$this->users_model->update_users($id, $name, $surname, $email, $phone, $username);
+
 
 		redirect('profile');
 	}

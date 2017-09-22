@@ -130,9 +130,10 @@
     margin-left: 42%; }
 
 #left-sectioninfo {
-  margin-left: 80px; }
+  margin-left: 100px; }
   #left-sectioninfo h1 {
-    padding: 1.5em; }
+    padding: 1.5em;
+    margin-left: -60px; }
   #left-sectioninfo #line {
     width: 15%;
     border: solid red;
@@ -147,6 +148,10 @@
     #left-sectioninfo #editform #right-label {
       margin-top: -375px;
       margin-left: 600px; }
+  #editdetails
+  {
+      margin-left: 10px;
+  }
 
 @media only screen and (max-width: 800px) {
   #profilepic-bar {
@@ -252,7 +257,14 @@
 }
   #allbody #askaquestionarea p {
     font-size: 2em;
-    padding-top: 20px; }
+    padding-top: 20px;
+}
+  #allbody #askaquestionarea #writecomment
+  {
+      width: 50em;
+      padding-left: 10px;
+      margin-bottom: 5px;
+  }
 
 #questionform {
   padding: 1em;
@@ -268,7 +280,8 @@
 
 #question-line {
   width: 60em;
-  margin-left: 5em; }
+  margin-left: 5em;
+  margin-top: 2em; }
 
 #sortbyandpinnedline {
   display: flex;
@@ -789,13 +802,28 @@
           margin-left: 18%;
           border: 2px solid #303133;
           padding: 7px;
-          margin-top: 30px; }
+          margin-top: 30px;
+       }
+        #signinpage #sign-inmain #colorleft #signinform #emailadd #email
+        {
+            background-color: #babec4;
+            font-weight: bold;
+        }
+
         #signinpage #sign-inmain #colorleft #signinform #password {
           width: 20em;
           margin-left: 18%;
           border: 2px solid #4c4c4c;
           margin-top: 30px;
           padding: 7px; }
+
+          #signinpage #sign-inmain #colorleft #signinform #password #passwordcss
+          {
+            background-color: #babec4;
+            font-weight: bold;
+          }
+
+
         #signinpage #sign-inmain #colorleft #signinform #forgotcreate {
           text-align: center; }
           #signinpage #sign-inmain #colorleft #signinform #forgotcreate a {
@@ -805,11 +833,12 @@
             padding-top: 15px;
             display: inline-block;
             text-align: center; }
+
         #signinpage #sign-inmain #colorleft #signinform #sign-in {
-          color: white;
-          width: 20em;
           margin-top: 20px;
-          margin-left: 50%; }
+          margin-left: 50%;
+       }
+
         #signinpage #sign-inmain #colorleft #signinform #signinwith {
           display: none;
           width: 75%; }

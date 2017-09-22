@@ -25,6 +25,8 @@
          </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
+
+
 <body>
             <?php echo $calendar; ?>
             <script type="text/javascript">

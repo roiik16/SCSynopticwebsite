@@ -7,6 +7,11 @@
     <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
     <link type="text/css" rel="stylesheet" href="css/style.css"><script src="https://use.fontawesome.com/ea811db0f0.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<?php
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+?>
 </head>
     <body id="indexpage">
         <div id="top-menu">

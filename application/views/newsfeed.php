@@ -30,16 +30,31 @@
                       <br><br><br><br>
                         <?php foreach($comments as $post) : ?>
                             <div id="postsection">
-                        </h3> Posted by <?php echo $post['user_email']; ?></h3>
+                        </h3> Posted by <?php echo $post['user_name'];?> </h3>
                           <small class="post-date"> Posted on: <?=date('d M Y,H:i', $post['c_date']);?></small>
                           <br/>
                           <?php echo $post['c_content']; ?>
-                          <br><br><br>
 
+                          <br><br><br>
                           </div>
                            <br>
                         <?php endforeach; ?>
                     </div>
+
+
+
+                    <?=form_open ('newsfeed/update_posts'); ?>
+                        <!-- <img src="<?=base_url('images/Files-Edit-File-icon.png')?>" width = "20px" height = "20px" > -->
+                        <br><br><br><br>
+                        <h3> Edit the post</h3>
+                        <br>
+                        <h5>Edit your content : </h5> <?=form_input($form['body']); ?>
+                        <br>
+
+                    <br><br>
+                        <?=form_submit (null, 'Submit changes');?>
+                        <?=form_close (); ?>
+
                 </div>
             </div>
 

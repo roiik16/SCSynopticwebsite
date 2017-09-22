@@ -31,6 +31,17 @@ class Newsfeed extends SC_Controller {
 	{
 
 		$this->add_posts ();
+
+		$data = array (
+			'form'		=> array (
+				'c_content'		=> array (
+					'type'			=> 'text',
+					'name'			=> 'content',
+					'placeholder'	=> 'Content',
+					'required'		=> TRUE
+				)
+			)
+		);
 	}
 
 
@@ -45,13 +56,13 @@ class Newsfeed extends SC_Controller {
 					'type'			=> 'text',
 					'name'			=> 'input-comment',
 					'placeholder'	=> 'Write your comment here',
-					'required'		=> TRUE
+					'required'		=> TRUE,
+					'id'			=> 'writecomment'
 				)
 			)
 		);
 		$this->build ('newsfeed', $data);
 	}
-
 
 	public function do_add_posts()
 	{
@@ -78,10 +89,31 @@ class Newsfeed extends SC_Controller {
 		if ($this->posts_model->add_posts ($body))
 		{
 			echo "message posted";
+			redirect ('newsfeed');
 		}
 		else
 		{
 			echo "Message was not posted";
 		}
 	}
+
+
+	public function update_posts()
+	{
+		$this->load->library ('form_validation');
+
+		$id = $this->session->userdata('tbl_users_user_ID');
+
+		$content = $this->input->post ('input-comment');
+		
+		if ($content == '') $content = NULL;
+
+		$this->posts_model->update_posts($id, $content);
+
+		redirect('newsfeed');
+	}
+
+
+
+
 }

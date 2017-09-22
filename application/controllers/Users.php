@@ -125,13 +125,15 @@ class Users extends SC_Controller {
 							'type'			=> 'email',
 							'name'			=> 'input-email',
 							'placeholder'	=> 'me@example.com',
-							'required'		=> TRUE
+							'required'		=> TRUE,
+							'id' 			=> 'email'
 						),
 						'password'		=> array (
 							'type'			=> 'password',
 							'name'			=> 'input-password',
 							'placeholder'	=> 'password',
-							'required'		=> TRUE
+							'required'		=> TRUE,
+							'id'			=> 'passwordcss'
 						)
 					)
 				);

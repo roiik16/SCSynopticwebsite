@@ -35,7 +35,7 @@ $config['base_url'] = '/SCSynopticwebsite/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'home.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

@@ -7,7 +7,7 @@
             <div id = "signinform">
               <?=form_open ('users/do_signin'); ?>
                 <div id="emailadd">
-                  <?=form_input ($form['email']); ?>
+                        <?=form_input ($form['email']); ?>
                 </div>
 
                   <div id="password">

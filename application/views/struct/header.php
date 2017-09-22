@@ -6,6 +6,11 @@
     <link rel="icon" href="<?=base_url('images/logo.png')?>">
     <link type="text/css" rel="stylesheet" href="<?=base_url('css/style.css')?>">
     <script src="https://use.fontawesome.com/ea811db0f0.js"></script>
+    <?php
+        header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache");
+    ?>
 </head>
 <body id="indexpage">
     <div id="top-menu">
